@@ -1,16 +1,16 @@
 # Python-C
 
-<p><b>Note!:</b> This is NOT a PROPER example of HTTP client with sockets in C.
-Main purpose of this repository is to learn to build python modules with Python C API!</p>
+<p><b>Note!:</b> This is <b>NOT a PROPER example of a HTTP client</b> with sockets in C.
+Its main purpose is to teach how to build Python modules using the Python C API!</p>
 
-<b>I use ```Python 3.8.10``` and ```gcc 9.4.0```</b>
+<b>I used ```Python 3.8.10``` and ```gcc 9.4.0```</b>
 
-<b>See code of 'HTTP client' in ```src/*``` directory and
+<b>See the code of the 'HTTP client' in ```src/``` directory and
 [myhttp.c](/myhttp.c) for Python C extention code.</b>
 
 ### The 1st step:
 
-<b>Install ```<Python.h>``` to be able to include the header in your code:</b>
+<b>Install ```<Python.h>``` to enable the inclusion of the header in your code:</b>
 ```sh
 sudo apt-get install python3-dev
 ```
@@ -45,7 +45,7 @@ MyHttp==1.0.0
 sudo python3 setup.py build
 ```
 
-<i>Codes below will create ```.so``` file in ```/build/*/``` folder.</i>
+<i>Codes below will create a ```.so``` file in ```build/``` folder.</i>
 
 ### 4th step:
 
@@ -63,7 +63,7 @@ Run ```test.py``` as:
 python3 test.py --full-print
 ```
 
-As ```--full-print``` flag provided ```test.py``` will print full responses.
+When the ```--full-print``` flag is provided, the ```test.py``` will print full responses.
 
 </br>
 
